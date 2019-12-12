@@ -30,7 +30,6 @@ def multiplicationTable(inputNum,symbolAnswer)
             else 
                 print "NAN"
             end
-           
         end
         puts
        

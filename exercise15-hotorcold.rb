@@ -6,7 +6,7 @@
 #     If the user successfully guesses the number, they win!
 
 
-randNum = rand(1..2)
+randNum = rand(1..1000)
 
 puts "Guess a number"
 userInput = gets.chomp.to_i
