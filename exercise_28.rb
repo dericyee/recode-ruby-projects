@@ -6,7 +6,7 @@
 
 # Write Your method code here
 def sum_of_evens(array)
-    return array.select{|i|i%2==0}.sum
+    return array.select{|i|i%2==0}.inject(0){|i,j|i+j}
 end
 
 # Driver Code: Do not edit under this line
