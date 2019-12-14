@@ -1,8 +1,5 @@
 # Given this array as your initial data, convert it to an Array of Hash
 
-# => [{"Name": "Adrian Lim", "Position": "Salesperson", "Age": "24", "Salary": "RM2000" }, {...}, {...}]
-  #  i in 1..data_arr do
-  # data_arr[0].each {|j| data_arr[1].each {|x|  newHash[j]=x}}
 data_arr = [
   ["Name", "Position", "Age", "Salary"],
   ["Adrian Lim", "Salesperson", "24", "RM2000"],
@@ -18,9 +15,9 @@ def convert_to_hash(data_arr)
   end
 
   for i in 0..newHash.count-1
-      val = data_arr[1+i]
     for j in 0..data_arr[0].count-1
-      newHash[i][data_arr[0][j]] = val[j]
+      #newHash[i] access the first index in array newHash (which is initially an empty object), data_arr[0][j] is the first index (name,position,age...) in the nested array. This sets the key of the hash. When i say = data_arr[1+i][j], it is setting the key of hash equals to the second index (adrian lim...) in the nested array.
+      newHash[i][data_arr[0][j]] = data_arr[1+i][j]
 
     end
 end
