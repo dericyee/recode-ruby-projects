@@ -6,6 +6,7 @@ answerArr = []
 
 def prime_numbers(n)
 newestArr=[]
+
 n.each do |x|
     prime_test=[]
     for i in 1..x
@@ -17,6 +18,7 @@ n.each do |x|
         newestArr=newestArr.push(x)
     end
 end
+
 return newestArr
 end
 
@@ -25,8 +27,6 @@ loop do
     answer = gets.chomp.downcase
     answerArr.push(answer.to_i)
     p answerArr
-
-    # prime_numbers greater than 1,can be divisible by 1 and itself
 
     if answer == "done"
         answerArr.pop

@@ -9,7 +9,6 @@
 def max_inject(*arg)
     array=[]
     array.push(*arg)
-    # return array.max
 
     return array.inject{|acc,el|
         if el>acc

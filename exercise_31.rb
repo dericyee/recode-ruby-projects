@@ -6,7 +6,7 @@
 
 # Write Your method code here
 
-def filter_lengths(array,length="5".to_i)
+def filter_lengths(array,length=5)
     return array.select{|x|x.length>=length}
     end
     

@@ -14,6 +14,7 @@ def replace_char_at!(string, char, index)
     return string
 end
 
+## THIS WORKS TOO
 # def replace_char_at!(string, char, index)
 #     string[index] = char
 #     return string

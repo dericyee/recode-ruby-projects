@@ -1,16 +1,14 @@
-def replace_elements!(array, hash)
-
-    hash.each do |k,v|
-       array.map!{|x| 
-        if x == k
-            x = v
-        else 
-            x
-        end
-    }
- 
-    end
-        return array
+def adult_in_group?(array)
+   
+   array.each do |x|
+    return x.each {|i,h| print "#{h}" }
+   end
 end
 
-replace_elements!([4, 2, 0, 2], {2=>"two", 0=>"zero", 5=>"five"})
+p adult_in_group?  ([
+    {name: "Mars", age: 17},
+    {name: "Hector", age: 21},
+    {name: "Hera", age: 15},
+    {name: "Artemis", age: 16}
+])
+
