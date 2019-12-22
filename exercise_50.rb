@@ -10,41 +10,47 @@
 # 05:30AM - Go to the gym
 # 08:00AM - Head for Recode Class
 
-def 
+
 timeArr = []
 activityArr = []
-newHash=Hash.new(0)
+
+def convertToStd(militaryTimeInput)
+hour = militaryTimeInput[0] + militaryTimeInput[1]
+minute = militaryTimeInput[2] + militaryTimeInput[3]
+
+if hour.to_i > 12
+    militaryTimeInput = "#{hour.to_i - 12}:#{minute}PM."
+
+elsif hour.to_i <= 12
+    militaryTimeInput = "#{hour}:#{minute}AM."
+end
+end
 
 loop do
 puts "What is the time now? (In military time)"
-militaryTimeInput = timeArr.push(gets.chomp)
+militaryTimeInput = gets.chomp
+timeArr.push(militaryTimeInput)
 
-# hour = militaryTimeInput[0] + militaryTimeInput[1]
-# minute = militaryTimeInput[2] + militaryTimeInput[3]
-
-# if hour.to_i > 12
-#     puts "#{militaryTimeInput} in military time is #{hour.to_i - (12)}:#{minute}PM."
-# elsif hour.to_i <= 12
-#     puts "#{militaryTimeInput} in military time is #{hour}:#{minute}AM."
-# end
 
 puts "What is the activity happening during that time?"
-militaryActivity = activityArr.push(gets.chomp)
+militaryActivity = gets.chomp
+activityArr.push(militaryActivity)
 
 puts "Is this the last activity you would like to input (Y/N)"
 lastActivity = gets.chomp.upcase
 
+newHash = Hash[timeArr.zip(activityArr)] 
 if lastActivity == "Y"
     puts "Your activities today are:"
-     timeArr.each{|i|newHash[i]= activityArr.each{|j|j}}
-     p timeArr
-     p activityArr
-     p newHash
 
-    break
+h = {}
+timeArr.zip(activityArr) { |a,b| h[a] = b } 
+
+        h.each {|k,v| puts "#{k} - #{v}"}
+
+
+        break
+       end
+   
+
 end
-
-
-end
-
-
