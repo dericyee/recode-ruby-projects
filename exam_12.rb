@@ -6,14 +6,17 @@
 
 def caesar_cipher(string, shift_factor)
     newArr = []
-    split = string.split('')
+    split = string.downcase.split('')
 
-    for i in 1..split.length do
+   
+    for i in 1..split.length-1 do
         newArr.push("#{split}"[i].ord + shift_factor)
     end
-    # p newArr
+    p newArr
 
-    newArr.map{|i|p i.chr}.join()
+    for i in 0..newArr.length-1 do
+        newArr[i] = newArr[i].chr
+    end
     p newArr
 # [72,69,76,76,79].map{|i| i.chr }.join
 end

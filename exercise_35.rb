@@ -20,6 +20,7 @@ def rotate_array!(array, steps)
         return array.unshift(array.slice!(steps..-1)).flatten!
     end
 end
+p rotate_array!(["NEW YORK", "TOKYO", "LONDON"], 7)
 
 # Driver Code: Do not edit under this line
 

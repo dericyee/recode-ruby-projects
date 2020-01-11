@@ -6,15 +6,19 @@
 #     If the user successfully guesses the number, they win!
 
 
-randNum = rand(1..1000)
+randNum = rand(1..100)
 
 puts "Guess a number"
-userInput = gets.chomp.to_i
 
+loop do
+userInput = gets.chomp.to_i
 if userInput > randNum
-    puts "Colder"
+    puts "Colder, Guess Again!"
 elsif userInput < randNum
-    puts "Hotter"
+    puts "Hotter, Guess Again!"
 else 
     puts "You succesfully guessed the right number! You win!"
+    break
 end
+end
+

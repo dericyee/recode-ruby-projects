@@ -12,13 +12,12 @@ def find_peaks(array)
     newArr = []
         newArr.push(array[0]) if array[0] > array[1]
       
- 
     for i in 2..array.length-2
         if array[i]>array[i-1] && array[i]>array[i+1]
             newArr.push(array[i])
         end
     end
-    newArr.push(array[-1]) if array[-1]>array[-2]
+        newArr.push(array[-1]) if array[-1]>array[-2]
         return newArr
 end 
 

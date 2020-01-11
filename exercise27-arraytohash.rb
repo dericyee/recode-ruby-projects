@@ -18,7 +18,6 @@ def convert_to_hash(data_arr)
     for j in 0..data_arr[0].count-1
       #newHash[i] access the first index in array newHash (which is initially an empty object), data_arr[0][j] is the first index (name,position,age...) in the nested array. This sets the key of the hash. When i say = data_arr[1+i][j], it is setting the key of hash equals to the second index (adrian lim...) in the nested array.
       newHash[i][data_arr[0][j]] = data_arr[1+i][j]
-
     end
 end
 return newHash

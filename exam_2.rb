@@ -7,6 +7,17 @@ def reverse(word)
 
 end
 
+# Right Answer 
+# def reverse(word)
+#     str=""
+
+#     for i in 1..word.length
+#         str+= word[-i]
+#     end
+#     return str
+
+# end
+
 puts reverse("cat") == "tac"
 puts
 

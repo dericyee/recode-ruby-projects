@@ -4,7 +4,6 @@ def sorted(n)
     return n.split('').sort.join('')
 end
 
-
 loop do
 puts "What is your first word?"
 firstWord = gets.chomp

@@ -13,7 +13,7 @@
 def global_linear_search(array, target)
     newArr = []
 
-    for current_index in 0..array.length
+    for current_index in 0..array.length-1
         if array[current_index] == target
             newArr.push(current_index)
         end

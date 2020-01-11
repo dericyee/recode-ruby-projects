@@ -3,13 +3,27 @@
 # You have to use .map to solve this
 
 def only_name(arr)
-     arr.each do |x|
-    #   return x.each{|k,v| print k[:name]}
-    #  end
-     return arr.map{|i| puts i[:name]}
-     end
+   newArr = []
+
+   for i in 0..arr.length-1
+      newArr.push(arr[i]["name"])
+   end
+p newArr
 end
 
+# RIGHT ANSWER
+
+# def only_name(arr)
+#   res = []
+#   arr.map { |el| res.push(el["name"]) }
+#   return res
+# end
+
+# def only_name(arr)
+#   newArr = []
+#   arr.each{|i|newArr.push(i["name"])}
+#   p newArr
+# end
 
 pets = [
   {"type"=>"dog", "name"=>"Ralph"},

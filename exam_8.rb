@@ -16,6 +16,23 @@ def pairs_to_zero(nums)
        return count-2
 end
 
+# RIGHT ANSWER 
+
+# def pairs_to_zero(nums)
+
+#    count = 0
+
+#    for i in 0..nums.length-1 do
+#       for j in i+1..nums.length-1 do
+#            if nums[i] + nums[j] == 0
+#                count = count + 1
+#            end
+#       end
+#    end
+#       return count
+# end
+
+
 puts pairs_to_zero([ 2, 5, 11, -5, -2, 7 ]) == 2
 puts
 puts pairs_to_zero([ 21, -23, 24 -12, 23 ]) == 1

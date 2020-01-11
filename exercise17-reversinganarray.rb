@@ -8,4 +8,4 @@ def reverse_array(n)
     return newArr
 end
 
-p reverse_array([1,2,3,4,5])  
+p reverse_array([1,2,3,4,5,6,7,8,9])  

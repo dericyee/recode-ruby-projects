@@ -6,7 +6,7 @@
 # The method should return false otherwise. 
 # For example is_coprime?(25, 12) is true because 1 is the only number that divides both 25 and 12.
 
-# Write Your method code here
+Write Your method code here
 def gcd(num1,num2)
     if num2 == 0
         return num1
@@ -19,6 +19,21 @@ def is_coprime?(num1,num2)
     return gcd(num1,num2)==1
 end
 p is_coprime?(25,12)
+
+# def is_coprime?(a, b)
+# factors_of_a = (1..a).select{|x|a%x==0}
+# factors_of_b = (1..b).select{|x|b%x==0}
+# result = factors_of_a.select{|x|factors_of_b.include?(x)}
+# if result.include?(1) && result.length == 1
+#     return true
+# end
+# return false
+# p factors_of_a 
+# p factors_of_b
+# p result
+# end
+
+is_coprime?(25,12)
 
 
 # Driver Code: Do not edit under this line

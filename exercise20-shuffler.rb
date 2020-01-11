@@ -3,11 +3,12 @@
 
 def shuffler(arr)
     newArr = []
-  for i in 0..arr.count-1 
-    spliced = arr.slice!(rand(0..arr.count-1),1)
-    newArr.push(spliced)
-  end
-    return newArr.flatten
+  # for i in 0..arr.count-1 
+  #   spliced = arr.slice!(rand(0..arr.count-1),1)
+  #   newArr.push(spliced)
+  # end
+  #   return newArr.flatten
+
 end
 
-p shuffler([1,2,3,4,5,6,7,8,9,10,11,12,13])
+p shuffler([1,2,3,4,5])
