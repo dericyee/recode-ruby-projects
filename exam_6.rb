@@ -15,3 +15,19 @@ puts
 
 print only_unique_elements(['cow', 'goat', 'sheep', 'cow', 'cow', 'sheep']) == ["cow", "goat", "sheep"]
 puts
+
+# def only_unique_elements(arr)
+    # Write your code here
+
+    # frequency = {}
+    # arr.each do |el| 
+    #     frequency[el] ||= 0
+    #     frequency[el] += 1
+    # end
+    # frequency.select { |char, num| num == 1 }
+    # return frequency.keys
+
+    # frequency = {}
+    # arr.each { |ele| frequency[ele] = true }
+    # return frequency.keys
+# end

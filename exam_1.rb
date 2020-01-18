@@ -14,3 +14,21 @@ puts
 
 puts find_factorial(5) == 120 # because 1 * 2 * 3 * 4 * 5 = 120
 puts
+
+# Joel's Answers
+# def find_factorial(num)
+    # Write your code here
+    # solution 1
+    #
+    # y = *(1..num)
+    # return y.inject { |el, acc| el * acc }
+    #
+    # solution 2
+    #
+    # result = 1
+    # (1..num).each do |num|
+    #     result = num * result
+    #     puts result
+    # end
+    # return result
+# "Withdre""Withdre""Withdre"

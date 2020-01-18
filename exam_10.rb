@@ -8,4 +8,10 @@ def deaf_grandma(sentence)
     return final
 end
 
+# def deaf_grandma(sentence)
+# words = sentence.split(" ")
+# new_words = words.map { |word| word.upcase + "!!" }
+# return new_words.join(" ")
+# end
+
 puts deaf_grandma("I have a bad feeling about this") == "I!! HAVE!! A!! BAD!! FEELING!! ABOUT!! THIS!!"

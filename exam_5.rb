@@ -19,3 +19,34 @@ puts
 
 print more_than_once('bootcamp') == []
 puts
+
+# def more_than_once(string)
+  # Write your code 
+  # solution 1
+  # arr = string.split
+  # frequency = {}
+  # arr.each do |el| 
+  #     frequency[el] ||= 0
+  #     frequency[el] += 1
+  # end
+  # result = []
+  # frequency.each do |char, num|
+  #     if num > 2
+  #         result << char
+  #     end
+  # end
+  # return result
+
+  # solution 2
+
+  # arr = string.split
+  # frequency = {}
+  # arr.each do |el| 
+  #     frequency[el] ||= 0
+  #     frequency[el] += 1
+  # end
+  # result = []
+  # frequency.select { |char, num| num > 2 }
+  # return frequency.keys
+
+# end

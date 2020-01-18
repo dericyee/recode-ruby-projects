@@ -11,6 +11,7 @@ def only_name(arr)
 p newArr
 end
 
+
 # RIGHT ANSWER
 
 # def only_name(arr)
@@ -20,9 +21,7 @@ end
 # end
 
 # def only_name(arr)
-#   newArr = []
-#   arr.each{|i|newArr.push(i["name"])}
-#   p newArr
+#    return arr.map { |hash| hash["name"] }
 # end
 
 pets = [
