@@ -35,7 +35,7 @@ def censor(str,arr)
         for j in 0..arr.length-1
             if split[i][1] == arr[j][1] ||split[i][1].downcase == arr[j][1].downcase
                 split[i].gsub!(/[aeiou]/i,"*")
-        end
+            end
         end
     end
     return split.join(' ')
